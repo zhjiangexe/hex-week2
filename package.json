@@ -2,12 +2,13 @@
   "name": "web-training",
   "version": "1.0.0",
   "description": "",
-  "main": "app/index.js",
+  "main": "dist/bundle.js",
+  "homepage": "https://zhjiangexe.github.io/hex-week2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "dev": "webpack serve",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",

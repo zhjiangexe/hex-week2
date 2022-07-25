@@ -2,7 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ghpages = require('gh-pages');
 
-ghpages.publish('dist', function(err) {});
+ghpages.publish(path.resolve(__dirname, 'dist'), function(err) {});
 
 module.exports = {
   mode: 'development',

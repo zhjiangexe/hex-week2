@@ -64,6 +64,7 @@ h1
   .info1
     margin-top: 20px
     text-align: center
+    font-weight: 900
     ul
       display: flex
       flex-direction: column
@@ -71,10 +72,26 @@ h1
       li
         font-size: 24px
         line-height: 42px
-      &:last-of-child
-          color: red
-
-
+      &:first-child
+        &::after
+          content: " "
+          display: block
+          width: 384px
+          height: 1px
+          background-color: black
+          margin-top: 24px
+      &:last-child
+        li
+          margin-top: 28px
+          &::before
+            margin-right: 16px
+            content: " "
+            display: inline-block
+            width: 22px
+            height: 22px
+            background: #891818
+            border-radius: 50%
+        
 
 .brand
   padding-top: 56px
